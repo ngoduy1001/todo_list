@@ -1,0 +1,36 @@
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <div class="label">
+                <h1> TODO </h1>
+
+                
+                <div id = 'btn1'>
+                    <form action="/task" method="post">
+                        <p><input type="text" name="content"></p>
+                        <input type="submit" value="Add task">
+                    </form>
+                </div>
+                <div id = "btn2">
+                    <form action="/deleteall" method="delete">
+                        <input type="submit" value="Clear All">
+                    </form>
+                </div>
+                <!-- <a href="/deleteall">Delete All</a> -->
+                
+                
+                
+                <div class = "lists">
+                <ol>
+                    {% for task in tasks %}
+                        <li>
+                            {% if task.done %} <strike> {% endif %}{{ task.content }} {% if task.done %} </strike>{% endif %}
+                            <a href="/done/{{ task.id }}">Done</a>
+                            <a href="/delete/{{ task.id }}">Delete</a>
+                        </li>
+                    {% endfor %}
+                </ol>
+            </div>
+            </div>
+    </body>
+

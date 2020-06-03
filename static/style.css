@@ -1,0 +1,19 @@
+h1 {text-align: center;}
+.label{
+    text-align: center;
+}
+.lists {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+#bt1 {
+    position: absolute;
+    display: inline;
+  }
+  
+  #bt2 {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 21px;
+  }
