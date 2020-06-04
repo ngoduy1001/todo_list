@@ -1,4 +1,7 @@
-h1 {text-align: center;}
+h1 {text-align: center;
+margin-right: 220px;
+}
+
 .label{
     text-align: center;
 }
@@ -6,6 +9,10 @@ h1 {text-align: center;}
     text-align: center;
     list-style-position: inside;
   }
+.listss {
+  text-align: center;
+  list-style-position: inside;
+}
 
 #bt1 {
     position: absolute;
@@ -17,3 +24,19 @@ h1 {text-align: center;}
     margin-left: 60px;
     margin-top: 21px;
   }
+
+  #title {
+    padding: 10px;
+    color: #464646;
+}
+body {
+    background: white;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
